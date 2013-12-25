@@ -10,10 +10,9 @@
   <children>
     <MenuBar>
       <menus>
-        <Menu text="Колдонуучулар">
+        <Menu text="Квартиралар">
           <items>
-            <MenuItem mnemonicParsing="false" onAction="#listRoom" text="Квартиралардын тизмеси" />
-            <MenuItem mnemonicParsing="false" onAction="#deleteRoom" text="Квартираларды очуруу" />
+            <MenuItem mnemonicParsing="false" onAction="#listHouse" text="Квартиралардын тизмеси" />
           </items>
         </Menu>
       </menus>

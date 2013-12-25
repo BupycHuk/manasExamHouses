@@ -17,6 +17,11 @@ public class MainController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    public void listHouse(ActionEvent actionEvent) throws IOException {
+        openControl("/View/ListHouseControl.fxml");
     }
 
     private void openControl(String controlPath) throws IOException {
@@ -26,10 +31,9 @@ public class MainController implements Initializable {
         vbox.getChildren().add(control);
     }
 
-    public void listSeller(ActionEvent actionEvent) throws IOException {
-        openControl("/View/ListRoomControl.fxml");
-    }
-    public void addUser(ActionEvent actionEvent) throws IOException {
-        openControl("/View/AddUserControl.fxml");
-    }
+
 }
+
+
+
+

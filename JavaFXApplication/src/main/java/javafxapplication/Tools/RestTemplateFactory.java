@@ -7,13 +7,6 @@ import org.springframework.web.client.RestTemplate;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created with IntelliJ IDEA.
- * User: Admin
- * Date: 01.12.13
- * Time: 2:07
- * To change this template use File | Settings | File Templates.
- */
 public class RestTemplateFactory {
 
     public static RestTemplate Build()
