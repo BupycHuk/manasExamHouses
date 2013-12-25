@@ -14,10 +14,7 @@ import javafx.stage.Stage;
 
 import java.net.URI;
 
-/**
- *
- * @author Akim
- */
+
 public class JavaFXApplication extends Application {
 
 
