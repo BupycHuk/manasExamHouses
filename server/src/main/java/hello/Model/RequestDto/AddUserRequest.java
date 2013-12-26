@@ -1,25 +1,26 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+package hello.Model.RequestDto;
 
-package javafxapplication.Model;
-
+import java.io.Serializable;
 /**
- *
- * @author Akim
+ * Created with IntelliJ IDEA.
+ * User: admin
+ * Date: 26.12.13
+ * Time: 13:25
+ * To change this template use File | Settings | File Templates.
  */
+public class AddUserRequest implements Serializable {
 
-public class User {
     private long id;
     private String userName;
     private String email;
     private String password;
 
-    protected User() {}
+    public AddUserRequest()
+    {
 
-    public User(String userName, String email, String password) {
+    }
+    public AddUserRequest(String userName, String email, String password ){
+
         this.userName = userName;
         this.email = email;
         this.password = password;
@@ -49,5 +50,13 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
-}
 
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+}
