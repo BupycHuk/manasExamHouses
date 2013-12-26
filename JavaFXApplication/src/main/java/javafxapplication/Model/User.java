@@ -6,10 +6,6 @@
 
 package javafxapplication.Model;
 
-/**
- *
- * @author Akim
- */
 
 public class User {
     private long id;
