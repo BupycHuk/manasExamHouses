@@ -14,7 +14,7 @@ package javafxapplication.Model;
 public class User {
     private long id;
     private String fullName;
-    private String login;
+    private String Contacts;
     private String password;
 
     protected User() {}
