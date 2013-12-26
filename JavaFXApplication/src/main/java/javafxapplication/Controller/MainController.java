@@ -10,7 +10,10 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-
+/**
+ *
+ * @author Akim
+ */
 public class MainController implements Initializable {
 
     public VBox vbox;
@@ -18,30 +21,6 @@ public class MainController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
     }
-
-    public void addSeller(ActionEvent actionEvent) throws IOException {
-        openControl("/View/AddSellerControl.fxml");
-    }
-    public void addShop(ActionEvent actionEvent) throws IOException {
-        openControl("/View/AddShopControl.fxml");
-    }
-
-
-
-    public void listShop(ActionEvent actionEvent) throws IOException {
-        openControl("/View/ListShopControl.fxml");
-    }
-
-    public void addProduct(ActionEvent actionEvent) throws IOException {
-        openControl("/View/AddProductsControl.fxml");
-    }
-    public void listProducts(ActionEvent actionEvent) throws IOException {
-        openControl("/View/ListProductsControl.fxml");
-    }
-    public void listOrders(ActionEvent actionEvent) throws IOException {
-        openControl("/View/ListOrderControl.fxml");
-    }
-
 
     private void openControl(String controlPath) throws IOException {
         Parent control = FXMLLoader.load(getClass().getResource(controlPath));
@@ -51,18 +30,9 @@ public class MainController implements Initializable {
     }
 
     public void listSeller(ActionEvent actionEvent) throws IOException {
-        openControl("/View/ListSellerControl.fxml");
+        openControl("/View/ListUserControl.fxml");
     }
-
-    public void listSoldProducts(ActionEvent actionEvent) throws IOException {
-         openControl("/View/ListSoldProductControl.fxml");
-    }
-
-    public void listShopTreeView(ActionEvent event) throws IOException {
-        openControl("/View/TreeView.fxml");
-    }
-
-    public void MainControl() throws IOException {
-        openControl("/View/MainWindow.fxml");
+    public void addUser(ActionEvent actionEvent) throws IOException {
+        openControl("/View/AddUserControl.fxml");
     }
 }

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="392.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="javafxapplication.Controller.User.AddUserController">
+  <children>
+    <Label layoutX="77.0" layoutY="78.0" minHeight="16.0" minWidth="69.0" text="Жаңы колдонуучу кошуу" textFill="#202020">
+      <font>
+        <Font size="20.0" />
+      </font>
+    </Label>
+    <Label layoutX="20.0" layoutY="141.0" text="колдонуучунун аты:">
+      <font>
+        <Font size="14.0" fx:id="x1" />
+      </font>
+      <textFill>
+        <Color blue="0.250" green="0.250" red="0.250" fx:id="x2" />
+      </textFill>
+    </Label>
+    <Label font="$x1" layoutX="106.0" layoutY="177.0" text="e-mail:" textFill="$x2" />
+    <Label font="$x1" layoutX="88.0" layoutY="213.0" text="Сыр созу:" textFill="$x2" />
+    <TextField fx:id="text1" layoutX="157.0" layoutY="137.0" prefHeight="27.0" prefWidth="200.0" />
+    <TextField fx:id="text2" layoutX="157.0" layoutY="175.0" prefHeight="27.0" prefWidth="200.0" />
+    <PasswordField fx:id="text3" layoutX="157.0" layoutY="210.0" prefHeight="27.0" prefWidth="200.0" promptText="" />
+    <Button layoutX="267.0" layoutY="251.0" onAction="#handleButtonAction" prefHeight="27.0" prefWidth="88.0" text="Кош" />
+  </children>
+</AnchorPane>

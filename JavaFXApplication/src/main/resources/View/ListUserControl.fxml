@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<FlowPane prefHeight="500.0" prefWidth="392.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="javafxapplication.Controller.User.ListUserController">
+  <children>
+    <TableView prefHeight="312.0" prefWidth="378.0">
+      <columns>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="203.0" text="Колдонуучунун аты" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="176.0" text="e-mail" />
+      </columns>
+    </TableView>
+  </children>
+</FlowPane>

@@ -10,25 +10,12 @@
   <children>
     <MenuBar>
       <menus>
-        <Menu text="Сатуучулар">
-          <MenuItem mnemonicParsing="false" onAction="#addSeller" text="Сатуучу кошуу" />
-          <MenuItem mnemonicParsing="false" onAction="#listSeller" text="Сатуучулардын тизмеси" />
+        <Menu text="Колдонуучулар">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#listSeller" text="Колдонуучулардын тизмеси" />
+            <MenuItem mnemonicParsing="false" onAction="#addUser" text="User Koshuu" />
+          </items>
         </Menu>
-        <Menu text="Дукондор">
-            <MenuItem mnemonicParsing="false" text="Дукон кошуу" onAction="#addShop"/>
-          <MenuItem mnemonicParsing="false" onAction="#listShop" text="Дукондордун тизмеси" />
-            <MenuItem mnemonicParsing="false" onAction="#listShopTreeView" text="Дукондордун жана сатуучулардын тизмеси"></MenuItem>
-        </Menu>
-          <Menu text="Буйумдар">
-              <items>
-                  <MenuItem mnemonicParsing="false" text="Сатылган буюмдардын тизмеси" onAction="#listSoldProducts"/>
-                  <MenuItem mnemonicParsing="false" text="Товар кошуу" onAction="#addProduct"/>
-                  <MenuItem mnemonicParsing="false" text="Товарлардын тизмеси" onAction="#listProducts"/>
-              </items>
-          </Menu>
-          <Menu text="Заказдар">
-              <MenuItem mnemonicParsing="false" text="Заказдын тизмеси" onAction="#listOrders"/>
-          </Menu>
       </menus>
     </MenuBar>
     <VBox fx:id="vbox">
