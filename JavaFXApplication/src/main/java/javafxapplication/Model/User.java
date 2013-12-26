@@ -13,41 +13,25 @@ package javafxapplication.Model;
 
 public class User {
     private long id;
-    private String fullName;
-    private String login;
+    private String username;
     private String password;
+    private String create_time;
 
     protected User() {}
 
-    public User(String firstName, String lastName, String password) {
-        this.fullName = firstName;
-        this.login = lastName;
+    public User(String username, String password, String create_time) {
+        this.username = username;
         this.password = password;
+        this.create_time = create_time;
     }
 
 
-    public String getFullName() {
-        return fullName;
+    public String getUsername() {
+        return username;
     }
 
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
-    }
-
-    public String getLogin() {
-        return login;
-    }
-
-    public void setLogin(String login) {
-        this.login = login;
-    }
-
-    public long getId() {
-        return id;
-    }
-    public void setId(long Id)
-    {
-        this.id = Id;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getPassword() {
@@ -56,6 +40,22 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getCreate_time() {
+        return create_time;
+    }
+
+    public void setCreate_time(String create_time) {
+        this.create_time = create_time;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 }
 
