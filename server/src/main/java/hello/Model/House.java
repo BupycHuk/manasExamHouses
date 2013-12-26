@@ -16,7 +16,7 @@ public class House {
 
     protected House() {}
 
-    public House(String adress, Double price, District district, User user) {
+    public House(String adress, Double price, District district, User user){
         this.adress = adress;
         this.price = price;
         this.district = district;

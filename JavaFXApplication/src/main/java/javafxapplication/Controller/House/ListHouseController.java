@@ -4,12 +4,15 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafxapplication.Model.District;
 import javafxapplication.Model.House;
+import javafxapplication.Proxy.DistrictProxy;
 import javafxapplication.Proxy.HouseProxy;
+import sun.font.Decoration;
 
 import java.net.URL;
 import java.util.Arrays;
@@ -29,34 +32,32 @@ public class ListHouseController implements Initializable {
     public TableColumn price;
     public TableColumn adress;
     public TableView tableView;
-    public ComboBox districComboBox;
-    HouseProxy houseProxy = new HouseProxy();
+    public ComboBox choiceDistrictComboBox;
+    public Label label;
 
+    HouseProxy houseProxy = new HouseProxy();
+    DistrictProxy districtProxy = new DistrictProxy();
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        user.setCellValueFactory(new PropertyValueFactory<House, String>("user"));
-        district.setCellValueFactory(new PropertyValueFactory<House, String>("district"));
+        user.setCellValueFactory(new PropertyValueFactory<House, String>("nameUser"));
+        district.setCellValueFactory(new PropertyValueFactory<House, String>("nameDistrict"));
         price.setCellValueFactory(new PropertyValueFactory<House, String>("price"));
         adress.setCellValueFactory(new PropertyValueFactory<House, String>("adress"));
-    }
 
+        District[] districts = districtProxy.getDistricts();
+        choiceDistrictComboBox.getItems().setAll(districts);
+    }
 
     @FXML
-    private void handleButtonAction(ActionEvent event) {
-        District district = (District)districComboBox.getValue();
-//        Integer count = Integer.valueOf(text3.getText());
-//        Double price = product.getPrice();
-        long districtId = (district!=null)? (long) district.getId() :0;
-
-        //WrittingOffProductRequest request = new WrittingOffProductRequest(productId,null,count,price);
-
-        //soldProductsProxy.writtingOffProduct(request);
+    private void filtrloo(ActionEvent event) {
+        String district = choiceDistrictComboBox.getValue().toString();
+        label.setText(district);
+//        long districtId = (district!=null)? (long) district.getId() :0;
     }
 
-    public void textTolukta(ActionEvent actionEvent) {
+    public void Tolukta(ActionEvent actionEvent) {
         List<House> houses = Arrays.asList(houseProxy.getHouseInfo());
         tableView.getItems().setAll(houses);
+
     }
-
-
 }

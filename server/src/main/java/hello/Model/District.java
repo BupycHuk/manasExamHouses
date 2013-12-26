@@ -13,9 +13,9 @@ public class District {
 
     protected District() {}
 
-    public District(String districtName) {
-        this.districtName = districtName;
-    }
+//    public District(String districtName) {
+//        this.districtName = districtName;
+//    }
 
 
     public String getDistrictName() {

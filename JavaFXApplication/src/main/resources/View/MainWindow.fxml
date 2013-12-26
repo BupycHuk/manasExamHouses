@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 
 <?import javafx.geometry.Insets?>
-<VBox id="AnchorPane" prefHeight="500.0" prefWidth="392.0" xmlns="http://javafx.com/javafx/8"
+<VBox id="AnchorPane" prefHeight="500.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/8"
       xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication.Controller.MainController">
     <children>
         <MenuBar>
@@ -16,7 +16,7 @@
                     </items>
 
                 </Menu>
-                <Menu text="тизмесин чыгаруу">
+                <Menu text="Квартиралар">
                     <items>
                         <MenuItem mnemonicParsing="false" text="Квартираларын тизмесин чыгаруу" onAction="#listHouses"/>
                     </items>
