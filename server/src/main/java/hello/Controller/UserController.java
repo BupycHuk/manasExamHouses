@@ -1,13 +1,7 @@
 package hello.Controller;
 
-import hello.Config;
-import hello.Model.*;
-import hello.Model.Repository.UserRepository;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.*;
 
 /**
  * Created with IntelliJ IDEA.
@@ -20,5 +14,65 @@ import org.springframework.web.bind.annotation.*;
 @Component
 @Controller
 public class UserController {
+    /**
+     * Created by Aza on 08.12.13.
+     */
+    public static class home {
+
+        private long id;
+        private String nameProduct;
+        private String price;
+
+        public String getNameProduct() {
+            return nameProduct;
+        }
+
+        public void setNameProduct(String nameProduct, String Price) {
+            this.nameProduct = nameProduct;
+            this.price = Price;
+        }
+
+        public long getId() {
+            return id;
+        }
+
+        public void setId(long id) {
+            this.id = id;
+        }
+
+        public String toString()
+        {
+            return getId()+" - "+ getNameProduct();
+
+        }
+
+
+        public String getPrice() {
+            return price;
+        }
+
+        public void setPrice(String price) {
+            this.price = price;
+        }
+
+        private Shop shop;
+
+        public Shop getShop() {
+            return shop;
+        }
+
+        public void setShop(Shop shop) {
+            this.shop = shop;
+        }
+
+        public String getShopname()
+        {
+            if (getShop()!=null)
+                return getShop().getName();
+            return null;
+        }
+
+
+    }
 }
 
