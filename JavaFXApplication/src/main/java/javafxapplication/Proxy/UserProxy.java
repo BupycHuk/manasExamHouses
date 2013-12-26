@@ -9,6 +9,10 @@ import javafxapplication.Model.User;
  * Time: 2:03
  * To change this template use File | Settings | File Templates.
  */
-public class UserProxy extends Proxy {
 
+public class UserProxy extends Proxy {
+    public User[] getSellers() {
+        return restTemplate.getForObject(urlService.GetServerUrl("/users/"), User[].class);
+    }
 }
+

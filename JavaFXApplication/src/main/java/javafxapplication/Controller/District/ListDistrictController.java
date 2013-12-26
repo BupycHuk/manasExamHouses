@@ -1,15 +1,11 @@
-package javafxapplication.Controller.User;
+package javafxapplication.Controller.District;
 
 import javafx.fxml.Initializable;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
-/**
- *
- * @author Akim
- */
-public class ListUserController implements Initializable {
+public class ListDistrictController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {

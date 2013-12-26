@@ -13,33 +13,39 @@ package javafxapplication.Model;
 
 public class User {
     private long id;
-    private String fullName;
-    private String login;
+    private String username;
+    private String email;
     private String password;
 
     protected User() {}
 
-    public User(String firstName, String lastName, String password) {
-        this.fullName = firstName;
-        this.login = lastName;
+    public User(String username, String email, String password) {
+        this.username = username;
+        this.email = email;
         this.password = password;
     }
 
 
-    public String getFullName() {
-        return fullName;
+    public String getUsername() {
+        return username;
     }
 
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
-    public String getLogin() {
-        return login;
+    public String toString()
+    {
+        return getUsername();
+
     }
 
-    public void setLogin(String login) {
-        this.login = login;
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public long getId() {

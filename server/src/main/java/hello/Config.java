@@ -34,7 +34,7 @@ public class Config {
         DriverManagerDataSource driverManagerDataSource = new DriverManagerDataSource();
         driverManagerDataSource.setDriverClassName("com.mysql.jdbc.Driver");
         driverManagerDataSource.setUsername("root");
-        driverManagerDataSource.setUrl("jdbc:mysql://localhost:3306/test");
+        driverManagerDataSource.setUrl("jdbc:mysql://localhost:3306/house");
         driverManagerDataSource.setPassword("");
         return driverManagerDataSource;
         //return new EmbeddedDatabaseBuilder().setType(H2).build();

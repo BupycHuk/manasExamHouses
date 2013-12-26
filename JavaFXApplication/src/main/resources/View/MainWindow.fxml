@@ -14,6 +14,13 @@
                     <items>
                         <MenuItem mnemonicParsing="false" text="Колдонуучулардын тизмеси" onAction="#listSeller"/>
                     </items>
+
+                </Menu>
+                <Menu text="тизмесин чыгаруу">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Квартираларын тизмесин чыгаруу" onAction="#listHouses"/>
+                    </items>
+
                 </Menu>
             </menus>
         </MenuBar>
