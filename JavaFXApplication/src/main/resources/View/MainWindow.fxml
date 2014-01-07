@@ -15,6 +15,11 @@
                         <MenuItem mnemonicParsing="false" text="Колдонуучулардын тизмеси" onAction="#listSeller"/>
                     </items>
                 </Menu>
+                <Menu text="Уйлор">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Уйлордун тизмеси" onAction="#listHouse"/>
+                    </items>
+                </Menu>
             </menus>
         </MenuBar>
         <VBox fx:id="vbox">

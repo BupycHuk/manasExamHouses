@@ -32,4 +32,7 @@ public class MainController implements Initializable {
     public void listSeller(ActionEvent actionEvent) throws IOException {
         openControl("/View/ListUserControl.fxml");
     }
+    public void listHouse(ActionEvent actionEvent) throws IOException {
+        openControl("/View/ListHouseControl.fxml");
+    }
 }
