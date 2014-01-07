@@ -1,27 +1,29 @@
-package hello.Model;
+package hello.Model.RequestDto;
 
-import javax.persistence.*;
+import java.io.Serializable;
+/**
+ * Created with IntelliJ IDEA.
+ * User: admin
+ * Date: 26.12.13
+ * Time: 13:25
+ * To change this template use File | Settings | File Templates.
+ */
+public class AddUserRequest implements Serializable {
 
-@Entity
-public class User {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-    @Column(name="name")
     private String name;
-    @Column(name="contact")
     private String contact;
-    @Column(name="adress")
     private String adress;
 
-    protected User(){}
-    public User(String name, String contact, String adress) {
+    public AddUserRequest(){
+
+    }
+    public AddUserRequest(String name, String contact, String adress ){
+
         this.name = name;
         this.contact = contact;
         this.adress = adress;
     }
-
 
     public long getId() {
         return id;
@@ -55,4 +57,3 @@ public class User {
         this.adress = adress;
     }
 }
-

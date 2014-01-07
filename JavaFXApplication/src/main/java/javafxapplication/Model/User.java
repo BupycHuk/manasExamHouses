@@ -13,49 +13,45 @@ package javafxapplication.Model;
 
 public class User {
     private long id;
-    private String fullName;
-    private String login;
-    private String password;
+    private String name;
+    private String contact;
+    private String adress;
 
     protected User() {}
 
-    public User(String firstName, String lastName, String password) {
-        this.fullName = firstName;
-        this.login = lastName;
-        this.password = password;
+    public User(String name, String contact, String adress) {
+        this.name = name;
+        this.contact = contact;
+        this.adress = adress;
     }
 
-
-    public String getFullName() {
-        return fullName;
-    }
-
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
-    }
-
-    public String getLogin() {
-        return login;
-    }
-
-    public void setLogin(String login) {
-        this.login = login;
-    }
 
     public long getId() {
         return id;
     }
-    public void setId(long Id)
-    {
-        this.id = Id;
+
+    public void setId(long id) {
+        this.id = id;
     }
 
-    public String getPassword() {
-        return password;
+    public String getName() {
+        return name;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getContact() {
+        return contact;
+    }
+
+    public String getAdress() {
+        return adress;
+    }
+
+    public void setAdress(String adress) {
+        this.adress = adress;
     }
 }
 
